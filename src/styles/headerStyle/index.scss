@@ -1,0 +1,19 @@
+.ant-layout-header {
+    background-color: $headerColor;
+    color: $textWhite;
+    @include FJCBAIC;
+    border-bottom: 1px solid $borderColor;
+
+    h2 {
+        color: $textWhite;
+        margin-bottom: 0;
+    }
+    .user-header {
+        @include FAIC;
+        h4 {
+            margin: 0;
+            margin-right: 1rem;
+            color: $textWhite;
+        }
+    }
+}
