@@ -1,10 +1,10 @@
-@import "variables";
-@import "mixin";
-@import "commonComponentStyle";
-@import "headerStyle";
-@import "sidebarStyle";
-@import "mainContainerStyle";
+@import 'variables';
+@import 'mixin';
+@import './commonComponentStyle/index.scss';
+@import './headerStyle/index.scss';
+@import './sidebarStyle/index.scss';
+@import './mainContainerStyle/index.scss';
 
 .ant-layout {
-    height: 100%;
+  height: 100%;
 }

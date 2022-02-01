@@ -1,14 +1,14 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { Layout } from 'antd';
 
 const { Sider, Content } = Layout;
 
-const Tasks = lazy(() => import('./components/tasks'))
-const Header = lazy(() => import('./components/header'))
-const Sidebar = lazy(() => import('./components/sidebar'))
+const Tasks = lazy(() => import('./components/tasks'));
+const Header = lazy(() => import('./components/header'));
+const Sidebar = lazy(() => import('./components/sidebar'));
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Layout>
           <Sidebar />
-          <Content className='main-container'>
+          <Content className="main-container">
             <Routes>
               <Route path={'/'} element={<Navigate to={'/tasks'} />} />
               <Route path={'/tasks'} element={<Tasks />} />
