@@ -1,0 +1,9 @@
+.main-container {
+    background-color: $textWhite;
+    padding: 50px 30px;
+    .task-container {
+        .ant-table-wrapper {
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,29 +1,22 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
-interface AppProps {}
-interface AppState {
-  name: string;
-}
+import 'antd/dist/antd.css';
 
-class App extends Component<AppProps, AppState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: 'React',
-    };
-  }
+import './styles/index.scss'
 
-  render() {
-    return (
-      <div>
-        <Hello name={this.state.name} />
-        <p>This is SANJAY</p>
-      </div>
-    );
-  }
-}
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 
-render(<App />, document.getElementById('root'));
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
